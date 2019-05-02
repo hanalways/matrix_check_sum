@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/matrix_check_sum'
+require 'pry'
 
 describe "matrix check sum" do
   describe "basic tests" do
@@ -11,7 +12,7 @@ describe "matrix check sum" do
                 [0, 3, 5, 6], # sum of 2nd row = 14
                 [0, 8, 3, 6]] # sum of 3rd row = 17
       # sums = 10, 18, 14, 17 for columns 0 through 3
-
+      
       # test and validate
       matrix_check_sum(matrix).must_equal true
     end
